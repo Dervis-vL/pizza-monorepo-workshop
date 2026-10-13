@@ -7,7 +7,7 @@
 rescue act:
     #!/usr/bin/env bash
 
-    tag="act{{ act }}-start"
+    tag="movement-{{ act }}-start"
     if ! git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
         echo -e "{{ red }}No tag '$tag'. Run: git fetch --tags{{ nc }}" >&2
         exit 1

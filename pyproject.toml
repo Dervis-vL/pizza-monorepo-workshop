@@ -48,15 +48,6 @@ addopts = [
 ]
 filterwarnings = ["error"]
 
-[tool.pytest_env]
-# Paths are resolved against rootdir (this file's directory), and missing
-# files are skipped silently -- keep these in sync when adding a workspace member.
-env_files = [
-    "libs/pizza_shared/tests/vars.env",
-    "services/pizza_client/tests/vars.env",
-    "apps/pizza_map/tests/vars.env",
-]
-
 # --- coverage ---------------------------------------------------------------
 [tool.coverage.run]
 branch = true

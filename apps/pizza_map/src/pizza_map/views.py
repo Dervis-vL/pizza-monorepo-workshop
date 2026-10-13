@@ -7,6 +7,7 @@ from folium import plugins as folium_plugins
 
 from pizza_map import constants
 from pizza_shared.schemas import Pizzeria
+from pizza_stats.stats import by_country
 
 
 def countries(pizzerias: Iterable[Pizzeria]) -> list[str]:
@@ -56,3 +57,8 @@ def build_map(pizzerias: list[Pizzeria]) -> folium.Map:
             icon=folium.Icon(color="red", icon="cutlery", prefix="fa"),
         ).add_to(cluster)
     return fmap
+
+
+def leaderboard(pizzerias: Iterable[Pizzeria]) -> list[dict[str, str | int]]:
+    """Rows for the country table under the map."""
+    return [stat.model_dump() for stat in by_country(pizzerias)]

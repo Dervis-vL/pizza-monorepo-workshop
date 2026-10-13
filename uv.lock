@@ -22,6 +22,7 @@ members = [
     "pizza-client",
     "pizza-map",
     "pizza-shared",
+    "pizza-stats",
 ]
 constraints = [{ name = "urllib3", specifier = ">=2.8.0" }]
 
@@ -1131,6 +1132,7 @@ dependencies = [
     { name = "folium" },
     { name = "pizza-client" },
     { name = "pizza-shared" },
+    { name = "pizza-stats" },
     { name = "streamlit" },
     { name = "streamlit-folium" },
 ]
@@ -1140,6 +1142,7 @@ requires-dist = [
     { name = "folium", specifier = ">=0.20" },
     { name = "pizza-client", editable = "services/pizza_client" },
     { name = "pizza-shared", editable = "libs/pizza_shared" },
+    { name = "pizza-stats", editable = "services/pizza_stats" },
     { name = "streamlit", specifier = ">=1.50" },
     { name = "streamlit-folium", specifier = ">=0.26" },
 ]
@@ -1154,6 +1157,17 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [{ name = "pydantic", specifier = ">=2.12" }]
+
+[[package]]
+name = "pizza-stats"
+version = "0.1.0"
+source = { editable = "services/pizza_stats" }
+dependencies = [
+    { name = "pizza-shared" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pizza-shared", editable = "libs/pizza_shared" }]
 
 [[package]]
 name = "pluggy"

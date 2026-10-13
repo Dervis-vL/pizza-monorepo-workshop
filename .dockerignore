@@ -1,0 +1,11 @@
+.venv
+.git
+**/__pycache__
+**/tests
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+.coverage-data
+dist
+workshop
+templates

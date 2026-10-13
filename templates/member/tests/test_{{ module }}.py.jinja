@@ -1,0 +1,8 @@
+"""Smoke test: the package imports and knows its version."""
+
+import {{ module }}
+
+
+def test_version() -> None:
+    """Dummy test."""
+    assert {{ module }}.__version__

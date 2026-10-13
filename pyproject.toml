@@ -1,0 +1,119 @@
+# The virtual root: the conductor. It builds nothing and ships nothing; it only
+# says who is in the band and hands out the shared sheet music (dev tools + config).
+
+# --- uv ---------------------------------------------------------------------
+[tool.uv]
+package = false
+exclude-newer = "1 week"
+required-version = ">=0.12.0"
+constraint-dependencies = ["urllib3>=2.8.0"]
+
+[tool.uv.workspace]
+members = [
+    "apps/*",
+    "libs/*",
+    "services/*",
+]
+
+[tool.uv.audit]
+# Suppress only while upstream has no fix
+ignore-until-fixed = []
+# Permanent suppressions. Every entry needs a comment: why it can't reach us.
+ignore = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=7.1.0",
+    "pytest-env>=1.7.0",
+    "mypy>=2.0.0",
+    "ruff>=0.15.12",
+    "deptry>=0.25.1",
+    "rust-just>=1.58",
+    "bump-my-version>=1.3.0",
+    "prek>=0.5.0",
+    "types-requests>=2.33.0.20260518",
+]
+
+# --- pytest -----------------------------------------------------------------
+[tool.pytest]
+python_files = ["test_*.py"]
+python_classes   = ["Test*"]
+python_functions = ["test_*"]
+testpaths = ["apps", "libs", "services"]
+addopts = [
+    "--import-mode=importlib",
+    "--strict-markers",
+    "-ra",
+]
+filterwarnings = ["error"]
+
+[tool.pytest_env]
+# Paths are resolved against rootdir (this file's directory), and missing
+# files are skipped silently -- keep these in sync when adding a workspace member.
+env_files = [
+    "libs/pizza_shared/tests/vars.env",
+    "services/pizza_client/tests/vars.env",
+    "apps/pizza_map/tests/vars.env",
+]
+
+# --- coverage ---------------------------------------------------------------
+[tool.coverage.run]
+branch = true
+parallel = false
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+skip_covered = false
+precision = 0
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "@(abc\\.)?abstractmethod",
+    "class .*\\bProtocol\\):",
+    # A whole file can opt out: put `# pragma: exclude file` anywhere in it.
+    "\\A(?s:.*# pragma: exclude file.*)\\Z",
+]
+
+[tool.coverage.xml]
+output = "coverage.xml"
+
+# --- ruff -------------------------------------------------------------------
+[tool.ruff]
+src = ["apps/*/src", "libs/*/src", "services/*/src"]
+line-length = 100
+indent-width   = 4
+target-version = "py312"
+extend-exclude = ["templates"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D",        # pydocstyle: docstrings are nice, not gated in a workshop
+    "COM812",   # conflicts with the formatter
+    "CPY001",   # copyright notice
+    "FIX002",   # to-do comments are allowed
+    "TC001", "TC002", "TC003",  # type-checking-only imports
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**/*.py" = ["S101", "PLR2004", "INP001", "ARG001", "EM101", "EM102", "TRY003"]
+"workshop/**/*.py" = ["INP001", "S101", "PLR2004"]  # paste-ready snippets
+".just/scripts/*.py" = ["T201", "INP001", "C901", "PLR2004"]  # CLI scripts print on purpose
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+
+# --- mypy -------------------------------------------------------------------
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+files = ["apps", "libs", "services"]
+
+[[tool.mypy.overrides]]
+module = ["streamlit_folium"]
+ignore_missing_imports = true

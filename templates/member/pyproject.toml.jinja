@@ -1,0 +1,48 @@
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12"]
+build-backend = "uv_build"
+
+[project]
+name = "{{ name }}"
+version = "0.1.0"
+description = "{{ description }}"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+{%- for dep in depends %}
+    "{{ dep }}",
+{%- endfor %}
+]
+{% if depends %}
+[tool.uv.sources]
+{%- for dep in depends %}
+{{ dep }} = { workspace = true }
+{%- endfor %}
+{% endif %}
+[tool.deptry]
+per_rule_ignores = { DEP003 = ["{{ module }}"{% for dep in depends %}, "{{ dep | replace('-', '_') }}"{% endfor %}] }
+
+[tool.bumpversion]
+current_version = "0.1.0"
+commit          = true
+tag             = true
+tag_name        = "{{ name }}/v{new_version}"
+tag_message     = "Release {{ name }} {new_version}"
+message         = "chore({{ name }}): bump {current_version} → {new_version}"
+commit_args     = "--no-verify"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search   = 'version = "{current_version}"'
+replace  = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "CHANGELOG.md"
+search   = "## [Unreleased]"
+replace  = "## [{new_version}] - {now:%Y-%m-%d}"
+
+[[tool.bumpversion.files]]
+filename = "release_scope.env"
+search   = "RELEASE=(patch|minor|major)"
+replace  = "RELEASE=placeholder"
+regex    = true

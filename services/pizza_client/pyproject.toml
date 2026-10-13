@@ -1,0 +1,48 @@
+[build-system]
+requires = ["uv_build>=0.12,<0.13"]
+build-backend = "uv_build"
+
+[project]
+name = "pizza-client"
+version = "0.1.0"
+description = "Adapters that supply pizzerias: the live platform API or an offline fixture"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pizza-shared",
+    "pydantic>=2.12",
+    "pydantic-settings>=2.12",
+    "requests>=2.32",
+    "tenacity>=9.1",
+]
+
+[tool.uv.sources]
+pizza-shared = { workspace = true }
+
+[tool.deptry]
+per_rule_ignores = { DEP003 = ["pizza_client", "pizza_shared"] }
+
+[tool.bumpversion]
+current_version = "0.1.0"
+commit          = true
+tag             = true
+tag_name        = "pizza-client/v{new_version}"
+tag_message     = "Release pizza-client {new_version}"
+message         = "chore(pizza-client): bump {current_version} → {new_version}"
+commit_args     = "--no-verify"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search   = 'version = "{current_version}"'
+replace  = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "CHANGELOG.md"
+search   = "## [Unreleased]"
+replace  = "## [{new_version}] - {now:%Y-%m-%d}"
+
+[[tool.bumpversion.files]]
+filename = "release_scope.env"
+search   = "RELEASE=(patch|minor|major)"
+replace  = "RELEASE=placeholder"
+regex    = true

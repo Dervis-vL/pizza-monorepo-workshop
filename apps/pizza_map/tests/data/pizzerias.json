@@ -1,0 +1,431 @@
+[
+  {
+    "id": 4,
+    "name": "Sartoria Panatieri",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 4,
+        "pizzeria_id": 4,
+        "address": "Carrer de Provença 330",
+        "city": "Barcelona",
+        "country": "Spain",
+        "latitude": 41.399,
+        "longitude": 2.1615,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 13,
+        "position": 4,
+        "edition_id": 1,
+        "pizzeria_id": 4,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 14,
+        "position": 8,
+        "edition_id": 2,
+        "pizzeria_id": 4,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 15,
+        "position": 1,
+        "edition_id": 7,
+        "pizzeria_id": 4,
+        "edition": {
+          "id": 7,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-europe-2024/",
+          "category_id": 2,
+          "category": {
+            "id": 2,
+            "slug": "europe",
+            "name": "50 Top Pizza Europe",
+            "description": "The European ranking"
+          }
+        }
+      },
+      {
+        "id": 16,
+        "position": 2,
+        "edition_id": 8,
+        "pizzeria_id": 4,
+        "edition": {
+          "id": 8,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-europe-2023/",
+          "category_id": 2,
+          "category": {
+            "id": 2,
+            "slug": "europe",
+            "name": "50 Top Pizza Europe",
+            "description": "The European ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  },
+  {
+    "id": 5,
+    "name": "The Pizza Bar on 38th",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 5,
+        "pizzeria_id": 5,
+        "address": "Mandarin Oriental, Nihonbashi",
+        "city": "Tokyo",
+        "country": "Japan",
+        "latitude": 35.6866,
+        "longitude": 139.7735,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 17,
+        "position": 5,
+        "edition_id": 1,
+        "pizzeria_id": 5,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 18,
+        "position": 5,
+        "edition_id": 2,
+        "pizzeria_id": 5,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 19,
+        "position": 1,
+        "edition_id": 9,
+        "pizzeria_id": 5,
+        "edition": {
+          "id": 9,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-asia-pacific-2024/",
+          "category_id": 5,
+          "category": {
+            "id": 5,
+            "slug": "asia-pacific",
+            "name": "50 Top Pizza Asia-Pacific",
+            "description": "The Asia-Pacific ranking"
+          }
+        }
+      },
+      {
+        "id": 20,
+        "position": 1,
+        "edition_id": 10,
+        "pizzeria_id": 5,
+        "edition": {
+          "id": 10,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-asia-pacific-2023/",
+          "category_id": 5,
+          "category": {
+            "id": 5,
+            "slug": "asia-pacific",
+            "name": "50 Top Pizza Asia-Pacific",
+            "description": "The Asia-Pacific ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  },
+  {
+    "id": 6,
+    "name": "Confine",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 6,
+        "pizzeria_id": 6,
+        "address": "Via Ludovico Ariosto 17",
+        "city": "Milan",
+        "country": "Italy",
+        "latitude": 45.4715,
+        "longitude": 9.1735,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 21,
+        "position": 6,
+        "edition_id": 1,
+        "pizzeria_id": 6,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 22,
+        "position": 3,
+        "edition_id": 3,
+        "pizzeria_id": 6,
+        "edition": {
+          "id": 3,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2024/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  },
+  {
+    "id": 7,
+    "name": "Seu Pizza Illuminati",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 7,
+        "pizzeria_id": 7,
+        "address": "Via Angelo Bargoni 10",
+        "city": "Rome",
+        "country": "Italy",
+        "latitude": 41.883,
+        "longitude": 12.469,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 23,
+        "position": 8,
+        "edition_id": 1,
+        "pizzeria_id": 7,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 24,
+        "position": 7,
+        "edition_id": 2,
+        "pizzeria_id": 7,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 25,
+        "position": 5,
+        "edition_id": 3,
+        "pizzeria_id": 7,
+        "edition": {
+          "id": 3,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2024/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      },
+      {
+        "id": 26,
+        "position": 4,
+        "edition_id": 4,
+        "pizzeria_id": 7,
+        "edition": {
+          "id": 4,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2023/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  },
+  {
+    "id": 8,
+    "name": "50 Kalò",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 8,
+        "pizzeria_id": 8,
+        "address": "Piazza Sannazaro 201/c",
+        "city": "Naples",
+        "country": "Italy",
+        "latitude": 40.8296,
+        "longitude": 14.2195,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 27,
+        "position": 10,
+        "edition_id": 1,
+        "pizzeria_id": 8,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 28,
+        "position": 6,
+        "edition_id": 2,
+        "pizzeria_id": 8,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 29,
+        "position": 7,
+        "edition_id": 3,
+        "pizzeria_id": 8,
+        "edition": {
+          "id": 3,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2024/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      },
+      {
+        "id": 30,
+        "position": 3,
+        "edition_id": 4,
+        "pizzeria_id": 8,
+        "edition": {
+          "id": 4,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2023/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  }
+]

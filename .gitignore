@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+.DS_Store
+
+# Tooling caches and reports
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage-data/
+coverage.xml
+test-report.xml
+htmlcov/
+
+# Local config
+.env
+.python-version
+.vscode/
+.idea/
+.workshop/

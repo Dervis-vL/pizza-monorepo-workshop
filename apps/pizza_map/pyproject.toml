@@ -1,0 +1,52 @@
+[build-system]
+requires = ["uv_build>=0.12,<0.13"]
+build-backend = "uv_build"
+
+[project]
+name = "pizza-map"
+version = "0.1.0"
+description = "Streamlit map of the world's best pizzerias"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.20",
+    "pizza-client",
+    "pizza-shared",
+    "streamlit>=1.50",
+    "streamlit-folium>=0.26",
+]
+
+[project.scripts]
+pizza-map = "pizza_map.app:main"
+
+[tool.uv.sources]
+pizza-client = { workspace = true }
+pizza-shared = { workspace = true }
+
+[tool.deptry]
+per_rule_ignores = { DEP003 = ["pizza_map", "pizza_client", "pizza_shared"] }
+
+[tool.bumpversion]
+current_version = "0.1.0"
+commit          = true
+tag             = true
+tag_name        = "pizza-map/v{new_version}"
+tag_message     = "Release pizza-map {new_version}"
+message         = "chore(pizza-map): bump {current_version} → {new_version}"
+commit_args     = "--no-verify"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search   = 'version = "{current_version}"'
+replace  = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "CHANGELOG.md"
+search   = "## [Unreleased]"
+replace  = "## [{new_version}] - {now:%Y-%m-%d}"
+
+[[tool.bumpversion.files]]
+filename = "release_scope.env"
+search   = "RELEASE=(patch|minor|major)"
+replace  = "RELEASE=placeholder"
+regex    = true

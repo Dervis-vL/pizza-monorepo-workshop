@@ -1,0 +1,281 @@
+[
+  {
+    "id": 1,
+    "name": "I Masanielli - Francesco Martucci",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 1,
+        "pizzeria_id": 1,
+        "address": "Viale Douhet 11",
+        "city": "Caserta",
+        "country": "Italy",
+        "latitude": 41.0733,
+        "longitude": 14.3321,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 1,
+        "position": 1,
+        "edition_id": 1,
+        "pizzeria_id": 1,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "position": 1,
+        "edition_id": 2,
+        "pizzeria_id": 1,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "position": 1,
+        "edition_id": 3,
+        "pizzeria_id": 1,
+        "edition": {
+          "id": 3,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2024/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "position": 1,
+        "edition_id": 4,
+        "pizzeria_id": 1,
+        "edition": {
+          "id": 4,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2023/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  },
+  {
+    "id": 2,
+    "name": "10 Diego Vitagliano Pizzeria",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 2,
+        "pizzeria_id": 2,
+        "address": "Via Nuova Agnano 1",
+        "city": "Naples",
+        "country": "Italy",
+        "latitude": 40.8281,
+        "longitude": 14.2091,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 5,
+        "position": 1,
+        "edition_id": 1,
+        "pizzeria_id": 2,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 6,
+        "position": 2,
+        "edition_id": 2,
+        "pizzeria_id": 2,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 7,
+        "position": 1,
+        "edition_id": 3,
+        "pizzeria_id": 2,
+        "edition": {
+          "id": 3,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2024/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "position": 2,
+        "edition_id": 4,
+        "pizzeria_id": 2,
+        "edition": {
+          "id": 4,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-italy-2023/",
+          "category_id": 4,
+          "category": {
+            "id": 4,
+            "slug": "italy",
+            "name": "50 Top Pizza Italy",
+            "description": "The Italian ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  },
+  {
+    "id": 3,
+    "name": "Una Pizza Napoletana",
+    "description": null,
+    "webpages": [],
+    "locations": [
+      {
+        "id": 3,
+        "pizzeria_id": 3,
+        "address": "175 Orchard St",
+        "city": "New York",
+        "country": "USA",
+        "latitude": 40.7207,
+        "longitude": -73.9887,
+        "phone": null
+      }
+    ],
+    "rankings": [
+      {
+        "id": 9,
+        "position": 3,
+        "edition_id": 1,
+        "pizzeria_id": 3,
+        "edition": {
+          "id": 1,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2024/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "position": 3,
+        "edition_id": 2,
+        "pizzeria_id": 3,
+        "edition": {
+          "id": 2,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-world-2023/",
+          "category_id": 1,
+          "category": {
+            "id": 1,
+            "slug": "world",
+            "name": "50 Top Pizza World",
+            "description": "The world ranking"
+          }
+        }
+      },
+      {
+        "id": 11,
+        "position": 1,
+        "edition_id": 5,
+        "pizzeria_id": 3,
+        "edition": {
+          "id": 5,
+          "year": 2024,
+          "url": "https://www.50toppizza.it/50-top-pizza-usa-2024/",
+          "category_id": 3,
+          "category": {
+            "id": 3,
+            "slug": "usa",
+            "name": "50 Top Pizza USA",
+            "description": "The USA ranking"
+          }
+        }
+      },
+      {
+        "id": 12,
+        "position": 1,
+        "edition_id": 6,
+        "pizzeria_id": 3,
+        "edition": {
+          "id": 6,
+          "year": 2023,
+          "url": "https://www.50toppizza.it/50-top-pizza-usa-2023/",
+          "category_id": 3,
+          "category": {
+            "id": 3,
+            "slug": "usa",
+            "name": "50 Top Pizza USA",
+            "description": "The USA ranking"
+          }
+        }
+      }
+    ],
+    "awards": []
+  }
+]

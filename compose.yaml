@@ -1,0 +1,18 @@
+# The take-home: one deployable, built from the lockfile, running on the fixture.
+# Flip PIZZA_SOURCE to http and point PIZZA_API_BASE_URL at the platform API for live data.
+services:
+  pizza_map:
+    build:
+      context: .
+      dockerfile: apps/pizza_map/Dockerfile
+    environment:
+      PIZZA_SOURCE: ${PIZZA_SOURCE:-fixture}
+      PIZZA_API_BASE_URL: ${PIZZA_API_BASE_URL:-http://localhost:8000}
+    ports:
+      - "8501:8501"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"]
+      interval: 10s
+      timeout: 5s
+      start_period: 15s
+      retries: 3

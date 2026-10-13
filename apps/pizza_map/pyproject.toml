@@ -12,7 +12,6 @@ dependencies = [
     "folium>=0.20",
     "pizza-client",
     "pizza-shared",
-    "pizza-stats",
     "streamlit>=1.50",
     "streamlit-folium>=0.26",
 ]
@@ -23,10 +22,9 @@ pizza-map = "pizza_map.app:main"
 [tool.uv.sources]
 pizza-client = { workspace = true }
 pizza-shared = { workspace = true }
-pizza-stats = { workspace = true }
 
 [tool.deptry]
-per_rule_ignores = { DEP003 = ["pizza_map", "pizza_client", "pizza_shared", "pizza-stats"] }
+per_rule_ignores = { DEP003 = ["pizza_map", "pizza_client", "pizza_shared"] }
 
 [tool.bumpversion]
 current_version = "0.1.0"

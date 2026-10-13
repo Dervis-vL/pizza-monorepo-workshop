@@ -52,9 +52,6 @@ right.metric("Countries", len(views.countries(shown)))
 
 st_folium(views.build_map(shown), height=constants.MAP_HEIGHT, width="stretch", returned_objects=[])
 
-st.subheader("Leaderboard by country")
-st.dataframe(views.leaderboard(pizzerias), hide_index=True, width="stretch")
-
 st.divider()
 st.caption("Data: 50 Top Pizza. Coordinates are approximate. Bring an appetite.")
 
